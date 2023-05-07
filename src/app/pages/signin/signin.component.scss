@@ -1,0 +1,113 @@
+@import "src/styles/mixins";
+
+.login-page {
+    height: 100vh;
+    background-color: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    @include xsm {
+        min-height: 100vh;
+        height: unset;
+    }
+
+    &__title {
+        font-size: 44px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    @include xsm {
+        width: 90%;
+    }
+    }
+
+    &__label {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__field {
+        border-radius: 0px;
+        background: #fff;
+        padding: 10px 10px;
+        width: 100%;
+        margin: 15px 0;
+        border: 0;
+        color: #0F0F0F;
+    }
+
+    &__btn-container {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        gap: 2%;
+
+        @include xsm {
+            flex-flow: column wrap;
+            width: 100%;
+            padding-top: 0px;
+        }
+    }
+}
+
+.site-logo {
+    padding-bottom: 20px;
+
+    &__img {
+    width: 400px;
+
+    @include xsm {
+        width: 300px;
+    }
+    }
+}
+
+.primary-btn {
+    background-color: #F29202;
+    border: 1px solid #F29202;
+    border: 0;
+    padding: 10px;
+    min-width: 160px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        border: 1px solid #F29202;
+        color: #F29202;
+    }
+
+    &--red {
+        background-color: #CC190F;
+        border: 1px solid #CC190F;
+
+        &:hover {
+            background-color: #fff;
+            color: #CC190F;
+        }
+    }
+
+    @include xsm {
+        margin-top: 30px;
+        width: 100%;
+    }
+}

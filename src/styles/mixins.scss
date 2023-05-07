@@ -1,0 +1,91 @@
+//New breakpoints according to Material Design specifications by Google: https://m1.material.io/layout/responsive-ui.html#responsive-ui-breakpoints
+
+/*
+* Handset / Tablet Portrait: small handset, medium handset, large handset
+* Handset / Tablet Landscape: small handset
+*/
+@mixin xsm {
+    @media only screen and (max-width: 599.98px) {
+        @content;
+    }
+  }
+  
+  /*
+  * Handset / Tablet Portrait: small tablet, large tablet,
+  * Handset / Tablet Landscape: medium handset, large handset, small tablet
+  */
+  @mixin sm {
+    @media only screen and (min-width: 600px) and (max-width: 959.98px) {
+        @content;
+    }
+  }
+  
+  @mixin modal-lower-sm {
+    @media only screen and (min-width: 600px) and (max-width: 767.98px) {
+        @content;
+    }
+  }
+  
+  @mixin modal-higher-sm {
+    @media only screen and (min-width: 768px) and (max-width: 959.98px) {
+        @content;
+    }
+  }
+  
+  @mixin up-to-sm {
+    @media only screen and (max-width: 959.98px) {
+        @content;
+    }
+  }
+  
+  @mixin from-sm {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+  }
+  
+  /*
+  * Handset / Tablet Landscape: large tablet
+  */
+  @mixin md {
+    @media only screen and (min-width: 960px) and (max-width: 1279.98px) {
+        @content;
+    }
+  }
+  
+  @mixin up-to-md {
+    @media only screen and (max-width: 1279.98px) {
+        @content;
+    }
+  }
+  
+  @mixin from-md {
+    @media only screen and (min-width: 960px) {
+        @content;
+    }
+  }
+  
+  @mixin lg {
+    @media only screen and (min-width: 1280px) and (max-width: 1919.98px) {
+        @content;
+    }
+  }
+  
+  @mixin up-to-lg {
+    @media only screen and (max-width: 1919.98px) {
+        @content;
+    }
+  }
+  
+  @mixin from-lg {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+  }
+  
+  @mixin xlg {
+    @media only screen and (min-width: 1920px) {
+        @content;
+    }
+  }
+  
