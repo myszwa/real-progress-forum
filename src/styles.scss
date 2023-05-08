@@ -51,6 +51,28 @@ html, body { height: 100%; }
 }
 
 h1 {
-    font-family: 'Teko', sans-serif;
+    font-family: 'Teko', sans-serif !important;
 }
 
+
+.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: #F29202 !important;
+}
+
+.mat-form-field{
+    &.mat-focused{
+        font-size: 20px;
+    }
+    .mat-input-element{
+        width: 100%;
+        font-size: 14px;
+    }
+    &::placeholder{
+        font-size: 14px;
+    }
+ }
+
+.mat-form-field-should-float {    
+  font-size: 24px;
+}

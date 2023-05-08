@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SigninComponent } from './signin.component';
 import { RouterModule, Routes } from '@angular/router';
 import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -13,12 +14,15 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    SigninComponent
+    SigninComponent,
+
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SigninModule { }
